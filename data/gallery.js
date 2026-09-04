@@ -1,0 +1,75 @@
+export const galleryImages = [
+  {
+    id: 1,
+    src: "https://images.unsplash.com/photo-1762438135827-428acc0e8941?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBvcnRyYWl0JTIwc3R1ZGVudHN8ZW58MHx8MHx8fDA%3D",
+    category: "Campus",
+    title: "Main Academic Block",
+    aspect: "portrait",
+  },
+  {
+    id: 2,
+    src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop",
+    category: "Events",
+    title: "Annual Day Celebrations",
+    aspect: "landscape",
+  },
+  {
+    id: 3,
+    src: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1000&auto=format&fit=crop",
+    category: "Students",
+    title: "Campus Life",
+    aspect: "square",
+  },
+  {
+    id: 4,
+    src: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1200&auto=format&fit=crop",
+    category: "Sports",
+    title: "Inter-Department Tournament",
+    aspect: "landscape",
+  },
+  {
+    id: 5,
+    src: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1000&auto=format&fit=crop",
+    category: "Workshops",
+    title: "Technical Workshop",
+    aspect: "portrait",
+  },
+  {
+    id: 6,
+    src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1000&auto=format&fit=crop",
+    category: "Celebrations",
+    title: "Independence Day",
+    aspect: "square",
+  },
+  {
+    id: 7,
+    src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop",
+    category: "Activities",
+    title: "Cultural Fest",
+    aspect: "landscape",
+  },
+  {
+    id: 8,
+    src: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1000&auto=format&fit=crop",
+    category: "Campus",
+    title: "Green Campus Walkway",
+    aspect: "portrait",
+  },
+  {
+    id: 9,
+    src: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=1000&auto=format&fit=crop",
+    category: "Students",
+    title: "Lab Session",
+    aspect: "square",
+  },
+];
+
+export const galleryCategories = [
+  "All",
+  "Campus",
+  "Events",
+  "Sports",
+  "Students",
+  "Workshops",
+  "Celebrations",
+];
