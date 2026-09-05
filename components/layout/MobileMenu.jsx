@@ -4,11 +4,21 @@ import { useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, ChevronDown, Phone, Mail } from "lucide-react";
-import { navigation } from "../../data/navigation";
-import { contactInfo, socialLinks } from "../../data/navigation";
-// import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa6";
+import { navigation, contactInfo, socialLinks } from "../../data/navigation";
 
-// const iconMap = { Facebook, Instagram, Linkedin, Youtube };
+// Map icon names from navigation data to React Icons components
+const iconMap = {
+  Facebook: FaFacebookF,
+  Instagram: FaInstagram,
+  Linkedin: FaLinkedinIn,
+  Youtube: FaYoutube,
+};
 
 export default function MobileMenu({ open, onClose }) {
   const [openIndex, setOpenIndex] = useState(null);
@@ -146,7 +156,7 @@ export default function MobileMenu({ open, onClose }) {
                       aria-label={s.label}
                       className="flex h-8 w-8 items-center justify-center rounded-full bg-bg-soft text-navy transition hover:bg-gold hover:text-navy-dark"
                     >
-                      <Icon size={14} />
+                      {Icon && <Icon size={14} />}
                     </a>
                   );
                 })}
