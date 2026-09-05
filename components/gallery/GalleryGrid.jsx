@@ -54,8 +54,12 @@ export default function GalleryGrid({ showFilters = true, limit }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.5, delay: (i % 6) * 0.06 }}
-            onClick={() => setActiveIndex(filtered.findIndex((f) => f.id === img.id))}
-            className={`group relative block w-full overflow-hidden rounded-2xl ${aspectClass[img.aspect]} break-inside-avoid`}
+            onClick={() =>
+              setActiveIndex(filtered.findIndex((f) => f.id === img.id))
+            }
+            className={`group relative block w-full overflow-hidden rounded-2xl ${
+              aspectClass[img.aspect]
+            } break-inside-avoid`}
           >
             <Image
               src={img.src}
@@ -65,7 +69,9 @@ export default function GalleryGrid({ showFilters = true, limit }) {
               className="object-cover transition duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-navy-dark/80 via-navy-dark/0 to-navy-dark/0 p-5 opacity-0 transition duration-300 group-hover:opacity-100">
-              <span className="text-sm font-semibold text-white">{img.title}</span>
+              <span className="text-sm font-semibold text-white">
+                {img.title}
+              </span>
               <span className="text-xs text-white/70">{img.category}</span>
             </div>
             <span className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-navy opacity-0 transition group-hover:opacity-100">
@@ -81,7 +87,9 @@ export default function GalleryGrid({ showFilters = true, limit }) {
           activeIndex={activeIndex}
           onClose={() => setActiveIndex(null)}
           onNav={(dir) =>
-            setActiveIndex((prev) => (prev + dir + filtered.length) % filtered.length)
+            setActiveIndex(
+              (prev) => (prev + dir + filtered.length) % filtered.length
+            )
           }
         />
       )}
